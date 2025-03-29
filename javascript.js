@@ -1,7 +1,3 @@
-
-//let humanScore = parseInt(0);
-//let computerScore = parseInt(0);
-
 const rock = document.getElementById('rockBtn');
 const paper = document.getElementById('paperBtn');
 const scissors = document.getElementById('scissorsBtn');
@@ -56,15 +52,12 @@ scissors.addEventListener('click', function() {
 
   function getComputerChoice() {
     let computerChoice = Math.floor(Math.random() * 3);
-    //console.log(num);
+
     if(computerChoice === 0) {
-        //console.log('paper');
         return 'paper';
     } else if(computerChoice === 1) {
-        //console.log('rock');
         return 'rock';
     } else {
-        //console.log('scissors');
         return 'scissors';
     }
 }
@@ -81,11 +74,3 @@ scissors.addEventListener('click', function() {
     }
     scoreText.textContent = 'Your selection ties!';
   }
-
-//for(let i = 0; i < 5; i++) {
-    //let humanSelection = prompt('Select paper, rock, or scissors: ')
-    //const computerChoice = getComputerChoice();
-    //console.log(playRound(humanSelection, computerChoice))
-    //console.log("Your score: " + humanScore);
-    //console.log("Computer's score: " + computerScore);
-    //}
